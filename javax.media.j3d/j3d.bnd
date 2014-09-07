@@ -1,0 +1,19 @@
+-classpath: lib/j3dcore.jar, \
+ lib/j3dutils.jar, \
+ lib/vecmath.jar, \
+ lib/jogl-all.jar, \
+ lib/joal.jar, \
+ lib/gluegen-rt.jar
+-output: javax.media.j3d_1.6.0.pre11.jar
+-nodefaultversion
+-nouses: true
+-failok: true
+Bundle-Name: Java3D OSGi Budle
+Bundle-SymbolicName: javax.media.j3d
+Bundle-Vendor: jarek.przygodzki@gmail.com
+Private-Package: *
+Import-Package: javax.swing.*, javax.imageio, org.eclipse.swt.*;resolution:=optional, !*
+Bundle-Version: 1.6.0.pre11
+Export-Package: javax.media.j3d,!com.sun.j3d.utils.scenegraph.io*,com.sun.j3d.*,javax.vecmath
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Include-Resource: natives=natives

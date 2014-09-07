@@ -8,7 +8,7 @@
 -nodefaultversion
 -nouses: true
 -failok: true
-Bundle-Name: Java3D OSGi Budle
+Bundle-Name: Java3D OSGi Bundle
 Bundle-SymbolicName: javax.media.j3d
 Bundle-Vendor: jarek.przygodzki@gmail.com
 Private-Package: *
